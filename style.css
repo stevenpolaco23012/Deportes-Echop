@@ -1,0 +1,52 @@
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    }
+
+    nav li {
+        display: inline-block;
+        margin-right: 10px; /* Ajusta el margen derecho según tus necesidades */
+        }
+
+nav{
+    margin: 10px;
+    padding: 15px;
+    background-color: bisque;
+
+}
+
+.header1{
+    background-color: rgba(0, 0, 0, 0.473);
+    color: rgba(240, 223, 223, 0.404);
+    padding: 30px;
+}
+
+
+
+
+    .container {
+        display: flex;
+        flex-direction: center;
+    }
+    
+    .column {
+        flex: 1;
+        padding: 10px;
+    }
+    
+    .column:nth-child(2) {
+      order: 1; /* Cambia la posición de la segunda columna */
+    }
+    
+
+    .column:nth-child(3) {
+        order: 2; /* Cambia la posición de la segunda columna */
+        }
+
+
+
+        footer{
+            padding: 20px;
+        }
+

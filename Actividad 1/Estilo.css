@@ -1,0 +1,112 @@
+/*Estilos para la estructura de HTML5*/
+body {
+  margin: 0;
+  padding: 0;
+}
+
+/*header o cabecera*/
+.header {
+  background-color: #f1f1f1;
+  padding: 20px;
+  text-align: center;
+}
+
+.header img{
+ width: 80px;
+ float: left;
+ clear: left;
+ overflow: auto;
+}
+
+/*nav o menu de navegacion*/
+.nav {
+  overflow: hidden;
+  background-color: #333;
+}
+
+/* Agregamos un estilo en forma de bloque para los enlaces */
+.nav a {
+  float: left;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+/* cambia de color cuando estan encima de la opcion */
+.nav a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+
+/*Menu horizontal*/
+/* Ahora eliminamos las viñetas, los márgenes y el relleno de la lista, agregamos un color de fondo */
+#horizontal{
+ list-style-type: none;
+ margin: 0;
+ padding: 0;
+ overflow: hidden;
+ background-color: #333;
+}
+
+/*hacemos que los elementos de la lista se acomoden a la izquierda de la pantalla*/
+li {
+float: left;
+}
+
+/*Hacemos que los enlaces dentro de los elementos se vean como bloques, letras color blanco y centradas*/
+li a {
+display: block;
+color: white;
+text-align: center;
+padding: 14px 16px;
+text-decoration: none;
+}
+
+/*Usamos el selector hover para cambiar el fondo del enlace del elemento cuando el mouse este encima*/
+li a:hover {
+background-color:orangered;
+}
+
+/*Section o contenido principal*/
+
+/* Crearemos 3 columnas iguales que flotaran  */
+.column {
+  float: left;
+  width: 30%;
+  padding: 15px;
+}
+
+/* Aqui hacemos que se acomoden una al lado de la otra */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/*Esto nos servira para 
+los dispositivos con baja resolucion, lo que
+hacemos es darle mas ancho para que las columnas
+se coloquen una encima de la otra. 
+*/
+@media screen and (max-width:600px) {
+  .column {
+    width: 100%;
+  }
+}
+
+/*footer o pie de pagina */
+.footer {
+  background-color: #f1f1f1;
+  padding: 10px;
+  text-align: center;
+}
+
+
+
+
+
+
+
